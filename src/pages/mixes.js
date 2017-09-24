@@ -20,19 +20,6 @@ export default ({ data }) => {
             to={node.fields.slug}
             css={{ textDecoration: `none`, color: `inherit`, display: `flex`}}
           >
-            <img css={{
-              display: `flex`,
-              flex: 1,
-              maxWidth:`300px`,
-              padding: `0 30px 0 0`,
-              ':hover': {
-                textDecoration: `underline`,
-              },
-              '@media (min-width: 400px)': {
-                color: `blue`,
-              },
-            }}
-            src="http://lorempixel.com/400/200/" />
             <div css={{
               display: `flex`,
               flex: 2,
