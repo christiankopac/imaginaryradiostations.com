@@ -1,0 +1,44 @@
+.logo {
+    position: absolute;
+    top: calc(50% - 6em);
+    left: calc(50% - 6em);
+    min-height: 300px;
+    border: 1px solid tomato;
+    padding: 40px;
+}
+
+.logo svg {
+    margin-right: 50px;
+}
+
+.logo:hover,
+.logo a:hover {
+    text-decoration: none
+}
+
+.logo:hover:after,
+.logo a:hover {
+    color: white;
+}
+
+h1 {
+    align-self: center;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text a:hover {
+    text-decoration: none
+}
+
+.title {
+    max-width: 300px;
+    color: black !important;
+    font-family: 'monaco';
+    font-size: 2.2rem;
+    letter-spacing: 10px;
+    line-height: 3rem;
+}

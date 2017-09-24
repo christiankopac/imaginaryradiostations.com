@@ -1,0 +1,8 @@
+.wrapper {
+    background-color: white;
+}
+
+.navlogo a:hover,
+.navlogo:hover {
+    color: tomato;
+}
