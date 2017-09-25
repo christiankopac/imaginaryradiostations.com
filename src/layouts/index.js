@@ -90,13 +90,13 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="imaginary radio stations"
       meta={[
-        { name: 'description', content: 'TODO' },
-        { name: 'keywords', content: 'TODO' },
+        { name: 'description', content: 'mixes and music ⌛ [timeless] 💣 [bombs] 🔥 [caliente!]' },
+        { name: 'keywords', content: 'music, dj, berlin, evano, pak, 1983, experimental, adult, ambient, house, techno, detroit' },
       ]}
     />
     <Header>
       <NavLogo className={styles.navlogo}>
-        <Link to="/"><AnimatedText style={{}} text="i r s"/></Link>
+        <Link to="/"><AnimatedText text="i r s"/></Link>
       </NavLogo>
       <Nav style={{
         display:"flex",

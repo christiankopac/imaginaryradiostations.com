@@ -28,9 +28,6 @@ export default ({ data }) => {
             <g.H3 marginBottom={rhythm(1 / 4)}>
               {node.frontmatter.title}{" "}
             </g.H3>
-            <g.H4 marginBottom={rhythm(1 / 4)}>
-              {node.frontmatter.tags}
-            </g.H4>
             <p>
               {node.excerpt}
             </p>
@@ -55,7 +52,7 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength:10)
         }
       }
     }

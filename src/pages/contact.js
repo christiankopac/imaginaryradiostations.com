@@ -1,5 +1,7 @@
 import React from 'react'
 import Logo from '../components/Logo/Logo.jsx'
+import AnimatedText from '../components/AnimatedText/AnimatedText.js'
+
 import Link from 'gatsby-link'
 export default () =>
   <div style={{ margin: '3rem auto', maxWidth: 600 }}>
@@ -9,5 +11,6 @@ export default () =>
       Write us on <a href="https://www.facebook.com/pg/Imaginary-Radio-Stations-723683261161286">facebook</a> or send us an email to <a href="mailto:yes@imaginaryradiostations.com">yes@imaginaryradiostations.com</a>
       </p>
     </div>
+    <AnimatedText text="imaginary radio stations"/>
     <Logo />
   </div>

@@ -1,9 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import baffle from 'baffle'
 import './AnimatedText.css'
-
-var createReactClass = require('create-react-class');
 
 class AnimatedText extends React.Component {
   componentDidMount() {

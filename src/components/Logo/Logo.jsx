@@ -2,11 +2,7 @@ import React from "react";
 import baffle from 'baffle';
 import Link from "gatsby-link"
 import "./Logo.css";
-
-var createReactClass = require('create-react-class');
-
 class Logo extends React.Component {
-
   componentDidMount() {
     baffle('.title')
       .start()
