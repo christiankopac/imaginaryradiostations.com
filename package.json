@@ -5,6 +5,8 @@
     "author": "Christian Kopac <hello@christiankopac.com>",
     "dependencies": {
         "baffle": "^0.3.6",
+        "eslint": "^4.10.0",
+        "eslint-config-airbnb": "^16.1.0",
         "gatsby": "^1.9.49",
         "gatsby-link": "^1.6.15",
         "gatsby-plugin-glamor": "^1.6.7",
