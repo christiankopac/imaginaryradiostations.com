@@ -13,8 +13,18 @@ export default () =>
     </p>
     <h2>evano</h2>
     <p>
-      Evano is a DJ / producer from Ljubljana, Slovenia. His music journey began back in 2004 when he got his first DJing experiences. One year later, alongside his friend Peter Jenko, he established a renowned Slovenian electronic music society called Phonotouch where they organized DJ workshops for youth, sharing their knowledge of DJing and also raising awareness of quality underground electronic music. In 2010 he teamed up with a young producer Vid Vai and Alex Long, an already established techno matador. Together they spent hours in the studio, experimenting with new sounds and unconventional approaches, sharing their knowledge and experiences. Soon after that he released his first EP called »Caviar« on the Canadian label Stereo Tension Records. At that time, he was discovered by one of the most active DJ collectives in Slovenia – Colours In Music. Recently released two EPs (2016 / 2017) on the newly established Slovenian label Phi. His music has since become noticed and praised by many well-known artists such as Dr. Nojoke, Pheek and Cleymoore who also invited him to collaborate in another artist collective called Pluie/Noir (based at Berlin’s Club der Visionaere). His interest in sound collage, and music for theatre and dance performance, has recently found a home under the project AMOLAB. With wide-reaching tastes and an ear for the unusual, Evano plays music for connoisseurs and those with a sense of adventure.
+      Evano is a DJ and electronic music producer from Ljubljana, Slovenia. His musical journey began back in 2004. A year later he co-founded an association for the development of electronic music in Slovenia called Phonotouch. In 2011 he started working with event agency and label Colours Music which opened him doors for his first international gigs.
     </p>
+    <p>
+      Evano has released his music on Archipel, PHI, Pluie/Noir, Colours Music, Škuc Ventilator and Založba Radia Študent. He produced music and sound collages for Slovenian Theater Mladinsko in 2015 and ACUD Theater Berlin in 2016. His interest in sound collage, and music for theatre and dance performance, has recently found a home under the project AMOLAB.
+    </p>
+    <p>
+    As a DJ with wide-reaching tastes and an ear for the unusual, Evano plays music for connoisseurs and those with a sense of adventure.
+    </p>
+    <p>
+    <a href="https://soundcloud.com/evano">soundcloud</a><br/>
+    <a href="https://www.residentadvisor.net/dj/evano/dates">RA</a>
+    </p> 
     <h2>1983</h2> 
     <p>
       DJ 1983 was born in Ljubljana, Slovenia. Initially turned on to music via playing guitar and drums in punk bands he too gazed into the mirrorball during his late teens and developed a passion for electronic music. DJ / producer with 15 years of DJ sets and live performances under his belt. Co-founder of Scienceofuse, an independent electronic music collective / record label (2006-2016). Vice-manager and resident of the now infamous Gumitwist club nights (hosting international heavyweights like A Guy Called Gerald, Alexander Robotnick, Container, Legowelt, Morphosis, Octave One and many, many more) at the legendary Klub K4, co-shaping the Ljubljana electronic music scene from 2008-2016. Shared a studio and often collaborated with Scienceofuse co-members Wichiwaka and Electronic Badminton King on tracks and live peformances. He is a regular contributor to the long-standing Chilli Space dub-techno / electronica compilation series (est.2002) and associated events as well as frequently gracing the decks at Elektroliza, a series of electro nights at club Channel Zero, Ljubljana. Has collaborated with up-and-coming local imprints like Stiropor, Elektroliza, Inn Kick and Sezam. 

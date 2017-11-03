@@ -2,6 +2,17 @@
     background-color: white;
 }
 
+.logoHome {
+    background: url('./noun_1197578_cc.png');
+    background-image: url('./noun_1197578_cc.svg'), none;
+    background-repeat: none;
+    min-width: 24px;
+    height: 40px;
+    position: relative;
+    top: 13px;
+    display: inline-flex;
+}
+
 .navlogo a:hover,
 .navlogo:hover {
     color: tomato;

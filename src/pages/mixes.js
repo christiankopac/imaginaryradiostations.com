@@ -9,7 +9,7 @@ export default ({ data }) => {
   return (
     <Container>
       <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-        recordings of lost radio stations
+        recordings
       </g.H1>
       <h4>
         {data.allMarkdownRemark.totalCount} Mixes
@@ -28,9 +28,7 @@ export default ({ data }) => {
             <g.H3 marginBottom={rhythm(1 / 4)}>
               {node.frontmatter.title}{" "}
             </g.H3>
-            <p>
-              {node.excerpt}
-            </p>
+            <p>{node.excerpt}</p>
             </div>
           </Link>
         </div>
@@ -52,7 +50,11 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength:10)
+          headings(depth:h6) {
+            value
+            depth
+          }
+          excerpt(pruneLength:9)
         }
       }
     }

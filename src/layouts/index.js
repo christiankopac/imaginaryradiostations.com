@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import styles from "./index.module.css"
 import styled from "styled-components"
 import Router from 'react-router'
-
 import AnimatedText from "../components/AnimatedText/AnimatedText.js"
 // learn to separate parts of the header into different const 
 
@@ -18,7 +17,7 @@ const Header = styled.div`
   color: #fff;
   @media (max-width: 700px) {
     background: black;
-    height: 12vh;
+    height: 18vh;
   }
 `
 const Nav = styled.div`
@@ -82,6 +81,20 @@ const NavLogo = styled.div`
      margin-left: 1rem;
 	 }
 `
+
+
+class homeText extends React.Component {
+  handleNvEnter = (mouseEnter) => {
+    console.log("Nv Enter:", mouseEnter);
+  }
+  render() {
+    return (
+      <div className={styles.logoHome}>
+      </div>    
+    );
+  }
+}
+
 // const currentURL = this.props.location.pathname
 // const bodyClass = currentURL === "/" ? "home" : "";
 
@@ -96,7 +109,12 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header>
       <NavLogo className={styles.navlogo}>
-        <Link to="/"><AnimatedText text="i r s"/></Link>
+        <Link to="/">
+          <span className={styles.logoHome}></span>    
+          <homeText></homeText>
+          <AnimatedText className="homeLinkText" ext="home"/>
+        </Link>
+
       </NavLogo>
       <Nav style={{
         display:"flex",
