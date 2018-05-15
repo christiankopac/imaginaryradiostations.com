@@ -121,6 +121,7 @@ const TemplateWrapper = ({ children }) => (
       }}>
         <Link to="/about">about</Link>
         <Link to="/mixes">mixes</Link>
+        <Link to="/events">events</Link>
         <Link to="/contact">contact</Link>
       </Nav>        
      </Header>
