@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../components/Logo/Logo.jsx';
 
-
-export default () =>  
+export default () =>
     <Logo />;

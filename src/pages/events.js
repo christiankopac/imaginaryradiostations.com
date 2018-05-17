@@ -1,9 +1,7 @@
 import React from "react"
-import Typography from "typography"
+import { Container, Box } from "bloomer"
 
 export default () =>
-    <div style={{ margin: '3rem auto', maxWidth: 600 }}>
-
-    <h2>event</h2>
-
-    </div>
+    <Container>
+        <Box>Events</Box>
+    </Container>

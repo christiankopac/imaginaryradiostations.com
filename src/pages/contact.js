@@ -5,7 +5,7 @@ import SubscribeFrom from "react-mailchimp-subscribe"
 import Link from 'gatsby-link'
 
 export default () =>
-  <div style={{ margin: '3rem auto', maxWidth: 600 }}>
+  <div>
     <h1>Get in touch!</h1>
     <div>
       <p>

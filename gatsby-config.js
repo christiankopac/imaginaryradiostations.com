@@ -1,3 +1,6 @@
+// Plugins
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
   siteMetadata: {
     title: `imaginary radio stations`,
@@ -20,5 +23,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-postcss-sass',
+      options: {
+        postCssPlugins: [autoprefixer()],
+        precision: 8,
+      },
+    }
   ],
 }

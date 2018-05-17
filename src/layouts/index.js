@@ -2,11 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import styles from "./index.module.css"
 import styled from "styled-components"
 import Router from 'react-router'
 import AnimatedText from "../components/AnimatedText/AnimatedText.js"
-// learn to separate parts of the header into different const 
+// learn to separate parts of the header into different const
+
+import "./index.scss"
+import styles from "./modules.index.css"
+import { Container, Columns, Column, Icon, Footer, Content } from "bloomer"
+
+import FontAwesomeIcon from "@fortawesome/react-fontawesome"
+import faHeart from '@fortawesome/fontawesome-free-solid/faHeart'
+import faHome from '@fortawesome/fontawesome-free-solid/faHome'
 
 const Header = styled.div`
   display: flex;
@@ -30,7 +37,7 @@ const Nav = styled.div`
     margin: 50px;
     text-decoration: none;
     position: relative;
-    &:after, 
+    &:after,
     &:hover:after {
       transform: translateY(0);
       height: 1px;
@@ -90,7 +97,7 @@ class homeText extends React.Component {
   render() {
     return (
       <div className={styles.logoHome}>
-      </div>    
+      </div>
     );
   }
 }
@@ -99,7 +106,7 @@ class homeText extends React.Component {
 // const bodyClass = currentURL === "/" ? "home" : "";
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div id="wrapper">
     <Helmet
       title="imaginary radio stations"
       meta={[
@@ -110,24 +117,40 @@ const TemplateWrapper = ({ children }) => (
     <Header>
       <NavLogo className={styles.navlogo}>
         <Link to="/">
-          <span className={styles.logoHome}></span>    
+          <FontAwesomeIcon icon={faHome } />
           <homeText></homeText>
           <AnimatedText className="homeLinkText" ext="home"/>
         </Link>
-
       </NavLogo>
-      <Nav style={{
-        display:"flex",
-      }}>
+      <Nav>
         <Link to="/about">about</Link>
         <Link to="/mixes">mixes</Link>
         <Link to="/events">events</Link>
         <Link to="/contact">contact</Link>
-      </Nav>        
+      </Nav>
      </Header>
-    <div className={styles.wrapper}>
+
+    <div>
       {children()}
     </div>
+
+    <Footer id='footer'>
+    <Container>
+        <Content>
+            <Columns>
+                <Column isFull>
+                    <p>
+                        Made with <FontAwesomeIcon icon={faHeart} /> somewhere in <a>Berlin</a>.
+                    </p>
+                </Column>
+            </Columns>
+            <Content isSize='small'>
+                <p>The source code is licensed under <a target="_blank">MIT</a>.</p>
+                <p>The website content is licensed under <a target="_blank">CC ANS 4.0</a>.</p>
+            </Content>
+        </Content>
+    </Container>
+  </Footer>
   </div>
 )
 
