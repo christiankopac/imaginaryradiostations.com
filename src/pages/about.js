@@ -38,6 +38,7 @@ export default () =>
     <ul>
     <li><a href="https://soundcloud.com/evano">soundcloud</a></li>
       <li><a href="https://www.discogs.com/artist/3127060-Evano">discogs</a></li>
+      <li><a href="https://evano.bandcamp.com/releases">bandcamp</a></li>
       <li><a href="https://www.residentadvisor.net/dj/evano/dates">resident advisor</a></li>
     </ul>
 
