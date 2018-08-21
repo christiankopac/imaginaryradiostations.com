@@ -25,5 +25,5 @@ export default () =>
                 <Location>Where: <a href="https://maze.berlin" target="_blank">maze berlin</a> (Mehringdamm 61)</Location>
                 <Time>When: 22:00-03:00</Time>
                 <p>join us on <a href="https://www.residentadvisor.net/events/1148042">RA</a> or <a href="https://www.facebook.com/events/989191654596143/">fb</a>.</p>
-                <img src="https://www.residentadvisor.net/images/events/flyer/2018/8/de-0824-1148042-0-front.jpg"/>
+        <img src={flyer} alt={flyer}/>
             </Events>
