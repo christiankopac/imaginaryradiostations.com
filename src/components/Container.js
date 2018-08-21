@@ -1,6 +1,12 @@
 import React from "react"
+import styled from "styled-components"
+
+const Container = styled.div`
+  margin: 1.6rem 0.8rem;
+  max-width: 600px;
+`
 
 export default ({ children }) =>
-  <div style={{ margin: "3rem auto", maxWidth: 600 }}>
+  <Container>
     {children}
-  </div>
+  </Container>

@@ -1,39 +1,57 @@
 import React from "react"
-import g from "glamorous"
 import Link from "gatsby-link"
-
-import { rhythm } from "../utils/typography"
 import Container from "../components/Container.js"
+import styled from "styled-components"
+
+const StyledContainer = styled(Container)`
+  padding: 20px 20px;
+  margin: 1.6rem 1.2rem;
+  max-width: 600px;
+`
+const StyledLink = styled(Link)`
+  margin: 0;
+  text-decoration: none;
+`;
+const StyledTitle = styled.h3`
+  margin: 0;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+`
+const Mix = styled.div`
+  margin-bottom: 20px;
+  border-bottom: .02rem solid #ccc;
+  `
+const Title = styled.h1`
+  margin: 0;
+`
+const Count = styled.p`
+  font-size: 0.9rem;
+`
+const StyledTags = styled.p`
+  font-family: "Menlo Code", "Source Code Pro", monospace;
+  font-size: 0.7rem;
+`
 
 export default ({ data }) => {
   return (
-    <Container>
-      <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-        recordings
-      </g.H1>
-      <h4>
-        {data.allMarkdownRemark.totalCount} Mixes
-      </h4>
+    <StyledContainer>
+      <Title>recordings</Title>
+      <Count>{data.allMarkdownRemark.totalCount} mixes</Count>
       {data.allMarkdownRemark.edges.map(({ node }) =>
-        <div css={{ display: `flex` }}>
-          <Link
-            to={node.fields.slug}
-            css={{ textDecoration: `none`, color: `inherit`, display: `flex`}}
-          >
-            <div css={{
-              display: `flex`,
-              flex: 2,
-              flexDirection: `column`
-            }}>
-            <g.H3 marginBottom={rhythm(1 / 4)}>
-              {node.frontmatter.title}{" "}
-            </g.H3>
-            <p>{node.excerpt}</p>
-            </div>
-          </Link>
-        </div>
+        <Mix id={node.id}>
+          <StyledLink to={node.fields.slug} >
+              <StyledTitle>{node.frontmatter.title}</StyledTitle>
+          </StyledLink>
+          <StyledTags>
+            {node.frontmatter.tags.map(function (tag) {
+              return `#${tag} `
+            })}
+          </StyledTags>
+        </Mix>
       )}
-     </Container>
+
+    </StyledContainer>
+
   )
 }
 
@@ -45,6 +63,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
+            tags
             date(formatString: "DD MMMM, YYYY")
           }
           fields {

@@ -11,7 +11,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-glamor`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {

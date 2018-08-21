@@ -6,7 +6,7 @@ import styles from "./index.module.css"
 import styled from "styled-components"
 import Router from 'react-router'
 import AnimatedText from "../components/AnimatedText/AnimatedText.js"
-// learn to separate parts of the header into different const 
+// learn to separate parts of the header into different const
 
 const Header = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ const Header = styled.div`
   color: #fff;
   @media (max-width: 700px) {
     background: black;
-    height: 18vh;
+    height: 25vh;
   }
 `
 const Nav = styled.div`
@@ -30,7 +30,7 @@ const Nav = styled.div`
     margin: 50px;
     text-decoration: none;
     position: relative;
-    &:after, 
+    &:after,
     &:hover:after {
       transform: translateY(0);
       height: 1px;
@@ -52,13 +52,12 @@ const Nav = styled.div`
     }
   }
   @media (max-width: 700px) {
+    display: flex;
     flex-direction: column;
-    flex: 1;
-    align-self: center;
-    padding-right: 1rem;
+    flex-flow: wrap;
     & a {
       margin: 0;
-      padding: 5px 0;
+      margin-right: 1.2rem;
       &:after {
         display: none;
       }
@@ -90,7 +89,7 @@ class homeText extends React.Component {
   render() {
     return (
       <div className={styles.logoHome}>
-      </div>    
+      </div>
     );
   }
 }
@@ -110,7 +109,7 @@ const TemplateWrapper = ({ children }) => (
     <Header>
       <NavLogo className={styles.navlogo}>
         <Link to="/">
-          <span className={styles.logoHome}></span>    
+          <span className={styles.logoHome}></span>
           <homeText></homeText>
           <AnimatedText className="homeLinkText" ext="home"/>
         </Link>
@@ -123,7 +122,7 @@ const TemplateWrapper = ({ children }) => (
         <Link to="/mixes">mixes</Link>
         <Link to="/events">events</Link>
         <Link to="/contact">contact</Link>
-      </Nav>        
+      </Nav>
      </Header>
     <div className={styles.wrapper}>
       {children()}

@@ -1,9 +1,27 @@
 import React from "react"
-import Typography from "typography"
+import styled from "styled-components"
+
+const Events = styled.div`
+    max-width: 600px;
+    margin: 1.6rem 0.8rem;
+`
+const Title = styled.h2``
+const Location = styled.p``
+const image = styled.img``
+const Address = styled.p``
+const Time = styled.p``
 
 export default () =>
-    <div style={{ margin: '3rem auto', maxWidth: 600 }}>
-
-    <h2>event</h2>
-
-    </div>
+            <Events>
+                <Title>24.8.2018<br />Imaginary Radio Stations<br /> #7</Title>
+            <ul>
+                <li><a href="http://soundcloud.com/nitz">Nitz</a>! (live)!</li>
+                <li>Evano</li>
+                <li>CP-AK</li>
+                <li>1983</li>
+                </ul>
+                <Location>Where: <a href="https://maze.berlin" target="_blank">maze berlin</a> (Mehringdamm 61)</Location>
+                <Time>When: 22:00-03:00</Time>
+                <p>join us on <a href="https://www.residentadvisor.net/events/1148042">RA</a> or <a href="https://www.facebook.com/events/989191654596143/">fb</a>.</p>
+                <img src="images/irs-7.jpg"/>
+            </Events>
