@@ -96,6 +96,10 @@ class homeText extends React.Component {
 
 // const currentURL = this.props.location.pathname
 // const bodyClass = currentURL === "/" ? "home" : "";
+const Container = styled.div`
+  nax-width: 600px;
+  margin: 0 auto;
+`
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -124,9 +128,9 @@ const TemplateWrapper = ({ children }) => (
         <Link to="/contact">contact</Link>
       </Nav>
      </Header>
-    <div className={styles.wrapper}>
+    <Container>
       {children()}
-    </div>
+    </Container>
   </div>
 )
 
