@@ -3,7 +3,6 @@ import styled from "styled-components"
 import flyer from "./irs-7.jpg"
 import { withPrefix } from 'gatsby-link'
 
-
 const Events = styled.div`
     max-width: 600px;
     margin: 1.6rem 0.8rem;
@@ -26,5 +25,5 @@ export default () =>
                 <Location>Where: <a href="https://maze.berlin" target="_blank">maze berlin</a> (Mehringdamm 61)</Location>
                 <Time>When: 22:00-03:00</Time>
                 <p>join us on <a href="https://www.residentadvisor.net/events/1148042">RA</a> or <a href="https://www.facebook.com/events/989191654596143/">fb</a>.</p>
-                <img src="{flyer}"/>
+                <img src="https://www.residentadvisor.net/images/events/flyer/2018/8/de-0824-1148042-0-front.jpg"/>
             </Events>
