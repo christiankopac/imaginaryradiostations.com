@@ -6,8 +6,7 @@ import styled from "styled-components"
 
 const Index = styled.div`
     margin: 3rem auto;
-    max-width: 500px;
-    align: center;
+    max-width: 90%
     `
 
 export default () =>
