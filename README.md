@@ -1,8 +1,10 @@
 # Imaginary Radio Stations
 
-👍 next event 24.8.2018
+✨ next event: **14.9.2018** ✨
 
-imaginaryradiostations@gmail.com
+✨ maze berlin, mehringdamm 61 ✨
+
+contact: imaginaryradiostations@gmail.com
 
 ## About
 
