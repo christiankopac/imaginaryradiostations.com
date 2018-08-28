@@ -5,6 +5,6 @@ layout: mix
 tags: ["lo-fi", "evano"]
 ---
 
-<iframe width="100%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319709050&amp;color=%23ffffff&amp;auto_play=true&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319709050&color=%230c0b0c&inverse=true&auto_play=true&show_user=true"></iframe>
 
 
