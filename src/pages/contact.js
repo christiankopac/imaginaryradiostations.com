@@ -20,10 +20,13 @@ export default () =>
   <Container>
     <h1>Get in touch!</h1>
     <div>
-      <p>Write us on <a href="https://www.facebook.com/pg/Imaginary-Radio-Stations-723683261161286">facebook</a> or send us an email to
-      <br />
-      <SmallEmail href="mailto:imaginaryradiostations@gmail.com">imaginaryradiostations@gmail.com</SmallEmail>
+      <p>Send us an email to <SmallEmail href="mailto:imaginaryradiostations@gmail.com">imaginaryradiostations@gmail.com</SmallEmail> or write us on <a href="https://www.facebook.com/pg/Imaginary-Radio-Stations-723683261161286">facebook</a>...
       </p>
+      <p>or maybe on <a href="https://instagram.com/imaginaryradiostations">instagram</a>?</p>
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <Logo />
   </Container>

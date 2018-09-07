@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import flyer from "./irs-7.jpg"
+import flyer from "./irs-8.png"
 import { withPrefix } from 'gatsby-link'
 
 const Events = styled.div`
@@ -15,15 +15,15 @@ const Time = styled.p``
 
 export default () =>
             <Events>
-                <Title>24.8.2018<br />Imaginary Radio Stations<br /> #7</Title>
+                <Title>14.9.2018<br />Imaginary Radio Stations<br /> #8</Title>
             <ul>
-                <li><a href="http://soundcloud.com/nitz">Nitz</a>! (live)!</li>
-                <li>Evano</li>
-                <li>CP-AK</li>
-                <li>1983</li>
+                <li><a href="http://soundcloud.com/cleymoore">Cleymoore</a> (<a href="https://soundcloud.com/pluie-noir">Pluie/Noir</a>)</li>
+                <li><a href="http://soundcloud.com/bklxa">Bakläxa</a></li>
+                <li><a href="http://soundcloud.com/198319831983">1983</a></li>
+                <li><a href="http://soundcloud.com/cp-ak">CP-AK</a></li>
                 </ul>
                 <Location>Where: <a href="https://maze.berlin" target="_blank">maze berlin</a> (Mehringdamm 61)</Location>
-                <Time>When: 22:00-03:00</Time>
-                <p>join us on <a href="https://www.residentadvisor.net/events/1148042">RA</a> or <a href="https://www.facebook.com/events/989191654596143/">fb</a>.</p>
+                <Time>When: 22:00+</Time>
+                <p>join us on <a href="https://www.residentadvisor.net/events/1157178">Resident Advisor</a> or <a href="https://www.facebook.com/events/2159374057676879/">Facebook</a>.</p>
         <img src={flyer} alt={flyer}/>
             </Events>
