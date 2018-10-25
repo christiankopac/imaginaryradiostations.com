@@ -1,8 +1,6 @@
 # Imaginary Radio Stations
 
-✨ next event: **14.9.2018** ✨
-
-✨ maze berlin, mehringdamm 61 ✨
+✨ [soundcloud](https://soundcloud.com/imaginaryradiostations)
 
 contact: imaginaryradiostations@gmail.com
 
@@ -12,6 +10,6 @@ Imaginary Radio Stations is a project by three Slovenian music enthusiasts, DJs 
 
 ## DJs
 
-- [EVANO](https://soundcloud.com/evano)
-- [CP-AK](https://soundcloud.com/cp-ak)
-- [1983](https://soundcloud.com/198319831983)
+💿 [EVANO](https://soundcloud.com/evano)
+💿 [CP-AK](https://soundcloud.com/cp-ak)
+💿 [1983](https://soundcloud.com/198319831983)
