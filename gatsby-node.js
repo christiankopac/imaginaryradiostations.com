@@ -1,14 +1,14 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
-exports.onCreateWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-html") {
-    config.loader("null", {
-      test: /bad-module/,
-      loader: "null-loader"
-    });
-  }
-};
+// exports.onCreateWebpackConfig = ({ config, stage }) => {
+//   if (stage === "build-html") {
+//     config.loader("null", {
+//       test: /bad-module/,
+//       loader: "null-loader"
+//     });
+//   }
+// };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
