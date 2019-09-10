@@ -1,6 +1,6 @@
 import React from 'react'
 import baffle from 'baffle'
-import Link from 'gatsby'
+import { Link } from 'gatsby'
 import './Logo.css'
 
 class Logo extends React.Component {

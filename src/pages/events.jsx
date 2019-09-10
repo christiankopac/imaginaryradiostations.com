@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import flyer from './irs-8.png'
+import Layout from '../components/Layout'
 
 const Events = styled.div`
     max-width: 600px;
@@ -13,6 +14,7 @@ const Location = styled.p``
 const Time = styled.p``
 
 export default () => (
+  <Layout>
   <Events>
     <Title>
 14.9.2018
@@ -51,4 +53,5 @@ or
     </p>
     <img src={flyer} alt={flyer} />
   </Events>
+  </Layout>
 )

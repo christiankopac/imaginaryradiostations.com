@@ -1,7 +1,7 @@
 import React from 'react'
 // import Typography from 'typography'
 import styled from 'styled-components'
-
+import Layout from '../components/Layout'
 const Header = styled.h1`
   margin-bottom: 1.2rem;
 `
@@ -11,6 +11,7 @@ const Title = styled.h2`
   `
 
 export default () => (
+  <Layout>
   <div style={{ margin: '1.6rem 1.2rem', maxWidth: 600 }}>
 
     <Header>About *</Header>
@@ -74,4 +75,5 @@ music blog in 2014 with
       <li><a href="https://www.mixcloud.com/198319831983/">mixcloud</a></li>
     </ul>
   </div>
+  </Layout>
 )

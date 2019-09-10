@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from '../components/Container.js'
+import Container from '../components/Container'
 
 const NotFoundPage = () => (
   <Container>

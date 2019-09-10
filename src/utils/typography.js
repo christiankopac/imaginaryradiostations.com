@@ -3,4 +3,5 @@ import funstonTheme from 'typography-theme-funston'
 
 const typography = new Typography(funstonTheme)
 
-module.exports = typography
+export const { scale, rhythm, options } = typography
+export default typography

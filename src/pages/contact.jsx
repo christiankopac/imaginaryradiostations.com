@@ -1,9 +1,10 @@
 import React from 'react'
 // import SubscribeFrom from 'react-mailchimp-subscribe'
-import Link from 'gatsby'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 // import AnimatedText from '../components/AnimatedText/AnimatedText.js'
 import Logo from '../components/Logo/Logo'
+import Layout from '../components/Layout'
 
 const Container = styled.div`
   max-width: 600px;
@@ -17,6 +18,7 @@ const SmallEmail = styled.p`
   display: block;
 `
 export default () => (
+  <Layout>
   <Container>
     <h1>Get in touch!</h1>
     <div>
@@ -40,4 +42,5 @@ or maybe on
     <br />
     <Logo />
   </Container>
+  </Layout>
 )

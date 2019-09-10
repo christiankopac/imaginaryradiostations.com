@@ -1,6 +1,6 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import Link from 'gatsby'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import AnimatedText from './AnimatedText/AnimatedText'
@@ -130,9 +130,8 @@ const TemplateWrapper = ({ children }) => (
   </div>
 )
 
-TemplateWrapper.defaultProps = {
-  // eslint-disable-next-line no-undef
-  children: PropTypes.node,
-}
+// TemplateWrapper.defaultProps = {
+//   children: PropTypes.node,
+// }
 
 export default TemplateWrapper

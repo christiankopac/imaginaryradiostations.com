@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Container from '../components/Container'
+import Layout from '../components/Layout'
 
 const StyledContainer = styled(Container)`
   padding: 20px 20px;
@@ -33,6 +34,7 @@ const StyledTags = styled.p`
 `
 
 export default ({ data }) => (
+  <Layout>
   <StyledContainer>
     <Title>recordings</Title>
     <Count>
@@ -52,6 +54,7 @@ mixes
     ))}
 
   </StyledContainer>
+  </Layout>
 )
 
 export const query = graphql`
