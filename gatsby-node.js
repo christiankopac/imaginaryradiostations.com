@@ -1,30 +1,30 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
+exports.onCreateWebpackConfig = ({ config, stage }) => {
   if (stage === 'build-html') {
     config.loader('null', {
       test: /bad-module/,
-      loader: 'null-loader'
+      loader: 'null-loader',
     })
   }
 }
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = createFilePath({ node, getNode })
     createNodeField({
+      name: 'slug',
       node,
-      name: `slug`,
-      value: slug,
+      value,
     })
   }
 }
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     graphql(`
       {
         allMarkdownRemark {
@@ -37,18 +37,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       }
-    `
-).then(result => {
-      result.data.allMarkdownRemark.edges.map(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/mix.js`),
-          context: {
-            // Data passed to context is available in page queries as GraphQL variables.
-            slug: node.fields.slug,
-          },
-        })
-      })
+    `).then((result) => {
+      result.data.allMarkdownRemark.edges.map(({ node }) => createPage({
+        path: node.fields.slug,
+        component: path.resolve('./src/templates/mix.js'),
+        context: {
+          slug: node.fields.slug,
+        },
+      }))
       resolve()
     })
   })

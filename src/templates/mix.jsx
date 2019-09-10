@@ -1,7 +1,8 @@
-import React from "react"
-import Container from "../components/Container.js"
-import Link from "gatsby-link"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
+import { Link, graphql } from 'gatsby'
+import Container from '../components/Container'
+
 
 const StyledContainer = styled(Container)`
   padding: 20px 20px;
@@ -19,13 +20,13 @@ export default ({ data }) => {
       </h1>
       <h6>{post.frontmatter.date}</h6>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <Link to="/mixes">back</Link>
-      </StyledContainer>
+      <Link href="/mixes" to="/mixes">back</Link>
+    </StyledContainer>
   )
 }
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

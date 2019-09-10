@@ -1,11 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+// import PropTypes from 'prop-types'
+import Link from 'gatsby'
 import Helmet from 'react-helmet'
-import styles from "./index.module.css"
-import styled from "styled-components"
-import Router from 'react-router'
-import AnimatedText from "../components/AnimatedText/AnimatedText.js"
+import styled from 'styled-components'
+import AnimatedText from './AnimatedText/AnimatedText'
+import styles from './Layout.module.css'
 // learn to separate parts of the header into different const
 
 const Header = styled.div`
@@ -78,19 +77,15 @@ const NavLogo = styled.div`
      font-size: 1.4rem;
      display: inline-flex;
      margin-left: 1rem;
-	 }
+ }
 `
 
 
 class homeText extends React.Component {
-  handleNvEnter = (mouseEnter) => {
-    console.log("Nv Enter:", mouseEnter);
-  }
-  render() {
+  render () {
     return (
-      <div className={styles.logoHome}>
-      </div>
-    );
+      <div className={styles.logoHome} />
+    )
   }
 }
 
@@ -112,30 +107,32 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header>
       <NavLogo className={styles.navlogo}>
-        <Link to="/">
-          <span className={styles.logoHome}></span>
-          <homeText></homeText>
-          <AnimatedText className="homeLinkText" ext="home"/>
+        <Link to="/" href="/">
+          <span className={styles.logoHome} />
+          <homeText />
+          <AnimatedText className="homeLinkText" ext="home" />
         </Link>
 
       </NavLogo>
       <Nav style={{
-        display:"flex",
-      }}>
-        <Link to="/about">about</Link>
-        <Link to="/mixes">mixes</Link>
-        <Link to="/events">events</Link>
-        <Link to="/contact">contact</Link>
+        display: 'flex',
+      }}
+      >
+        <Link href="/about" to="/about">about</Link>
+        <Link href="/mixes" to="/mixes">mixes</Link>
+        <Link href="/events" to="/events">events</Link>
+        <Link href="/contact" to="/contact">contact</Link>
       </Nav>
-     </Header>
+    </Header>
     <Container>
-      {children()}
+      {children}
     </Container>
   </div>
 )
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+TemplateWrapper.defaultProps = {
+  // eslint-disable-next-line no-undef
+  children: PropTypes.node,
 }
 
 export default TemplateWrapper
