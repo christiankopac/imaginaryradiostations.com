@@ -1,8 +1,9 @@
 ---
 title: "_amolab_ guest mix"
 date: "2018-07-20"
+audio: "test.mp3"
 layout: mix
-tags: ["story", "cp-ak", "amolab"]
+tags: ["story","cp-ak","amolab"]
 ---
 
  [amolab](https://soundcloud.com/amolab).

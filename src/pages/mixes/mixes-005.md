@@ -2,6 +2,7 @@
 title: "_nitz_ live from od:vod festival"
 date: "2018-08-28"
 layout: mix
+audio: "test.mp3"
 tags: ["live", "nitz", "od:vod"]
 ---
 

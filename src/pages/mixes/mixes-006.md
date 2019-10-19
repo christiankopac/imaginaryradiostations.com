@@ -2,6 +2,7 @@
 title: "Evano @ Imaginary Radio Stations #7"
 date: "2018-09-03"
 layout: mix
+audio: "test.mp3"
 tags: ["recording", "evano"]
 ---
 

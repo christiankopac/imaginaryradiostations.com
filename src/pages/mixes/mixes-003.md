@@ -1,8 +1,9 @@
 ---
 title: "003. 1983"
 date: "2017-09-23"
+audio: "test.mp3"
 layout: mix
-tags: ["live", "1983"]
+tags: ["1983", "live"]
 ---
 
 Live jam recorded somewhere in Prenzlauer Berg.

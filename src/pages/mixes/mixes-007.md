@@ -1,7 +1,9 @@
 ---
+path: /mix/cpak-irs-07
 title: "CP-AK @ Imaginary Radio Stations #7"
 date: "2018-09-05"
 layout: mix
+audio: "test2.m4a"
 tags: ["recording", "cp-ak"]
 ---
 

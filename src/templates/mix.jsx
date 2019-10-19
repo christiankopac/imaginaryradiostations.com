@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link, graphql } from "gatsby";
 import Container from "../components/Container";
+import ReactAudioPlayer from 'react-audio-player';
 
 const StyledContainer = styled(Container)`
   padding: 20px 20px;
@@ -16,6 +17,11 @@ export default ({ data }) => {
       <h1>{post.frontmatter.title}</h1>
       <h6>{post.frontmatter.date}</h6>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <ReactAudioPlayer
+        src={post.frontmatter.audio}
+        autoPlay
+        controls
+      />
       <Link href="/mixes" to="/mixes">
         back
       </Link>
