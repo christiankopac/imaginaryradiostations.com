@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Container from '../components/Container'
 import Layout from '../components/Layout'
 import AudioCard from 'audiocard'
-import ClippPlayer from 'clipp-player'
 
 const StyledContainer = styled(Container)`
   //padding: 20px 20px;
@@ -88,50 +87,7 @@ const StyledTags = styled.p`
           </Count>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Mix id={node.id}>
-              {/*<StyledLink to={node.fields.slug}>*/}
               <StyledTitle>{node.frontmatter.title}</StyledTitle>
-              {/*</StyledLink>*/}
-              <div class=''>
-              <ClippPlayer
-                className={'clipp-player'}
-                src={node.frontmatter.audio.publicURL}
-                btnStyle={{
-                  color: '#FFF',
-                  border: '0px solid #FFF',
-                  // borderRadius: '10px',
-                  backgroundColor: '#111',
-                  fontSize: '10px',
-                  background: '#333'
-                  // padding: '4px 4px 2px 1px',
-                  // margin: '40px 0 0 10px'
-                }}
-                counterStyle={{
-                  width: '15%',
-                  fontSize: '12px',
-                  margin: '8px 8px 0 0',
-                }}
-                volume={1}
-                zoom={1}
-                options={{
-                  audioRate: 1,
-                  autoCenter: false,
-                  barGap: 2,
-                  cursorColor: '#FFF',
-                  cursorWidth: 1,
-                  fillParent: true,
-                  height: 60,
-                  hideScrollbar: true,
-                  normalize: true,
-                  partialRender: true,
-                  progressColor: '#000',
-                  responsive: false,
-                  waveColor: '#e1e5ea',
-                }}
-              />
-              </div>
-              {/*<AudioCard*/}
-              {/*  source={node.frontmatter.audio.publicURL}*/}
-              {/*/>*/}
               <StyledTags>
                 {node.frontmatter.tags.map(tag => `#${tag} `)}
               </StyledTags>

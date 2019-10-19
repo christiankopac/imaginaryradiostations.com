@@ -19,7 +19,6 @@
         "audiocard": "^1.0.0",
         "babel-plugin-styled-components": "^1.10.6",
         "baffle": "^0.3.6",
-        "clipp-player": "^1.0.6",
         "eslint": "^6.3.0",
         "eslint-config-airbnb": "^18.0.1",
         "eslint-plugin-flowtype": "^4.3.0",
