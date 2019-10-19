@@ -104,7 +104,8 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'mixes and music ⌛ [timeless] 💣 [bombs] 🔥 [caliente!]' },
         { name: 'keywords', content: 'music, dj, berlin, evano, pak, 1983, experimental, adult, ambient, house, techno, detroit' },
       ]}
-    />
+      />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
     <Header>
       <NavLogo className={styles.navlogo}>
         <Link to="/" href="/">
