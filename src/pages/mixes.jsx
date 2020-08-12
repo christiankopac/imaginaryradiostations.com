@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Container from '../components/Container'
 import Layout from '../components/Layout'
 import AudioCard from 'audiocard'
+import ReactAudioPlayer from 'react-audio-player'
 
 const StyledContainer = styled(Container)`
   //padding: 20px 20px;
@@ -32,50 +33,7 @@ const StyledTags = styled.p`
   font-family: "Menlo Code", "Source Code Pro", monospace;
   font-size: 0.7rem;
 `
-//
-// constructor(props) {
-//   super(props);
-//
-//   this.state = {
-//     playing: false,
-//     pos: 0
-//   };
-//   this.handleTogglePlay = this.handleTogglePlay.bind(this);
-//   this.handlePosChange = this.handlePosChange.bind(this);
-// }
-// handleTogglePlay() {
-//   this.setState({
-//     playing: !this.state.playing
-//   });
-// }
-// handlePosChange(e) {
-//   this.setState({
-//     pos: e.originalArgs[0]
-//   });
-// }
-// class Mixes extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       data: props.data,
-//       playing: false
-//     };
-//   }
-
-
-// class Mixes extends React.Component {
-//   constructor(data) {
-//     super(<data></data>);
-//     this.state = {
-//       playing: false
-//     };
-//   }
-//   render()
-//   {
-//     return (
   export default ({data}) => {
-    // const post = data.allWordpressPost.edges[0].node
-    // console.log(post)
     return(
       <Layout>
         <StyledContainer>
@@ -85,13 +43,13 @@ const StyledTags = styled.p`
             {' '}
             mixes
           </Count>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Mix id={node.id}>
-              <StyledTitle>{node.frontmatter.title}</StyledTitle>
-              <StyledTags>
-                {node.frontmatter.tags.map(tag => `#${tag} `)}
-              </StyledTags>
-            </Mix>
+
+          {data.allMarkdownRemark.nodes.map(node => (
+            <>
+            <h1>{node.frontmatter.title}</h1>
+            <h6>{node.frontmatter.date}</h6>
+            <div dangerouslySetInnerHTML={{ __html: node.html }} />
+            </>
           ))}
         </StyledContainer>
       </Layout>
@@ -102,27 +60,27 @@ export const query = graphql`
     {
         allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
             totalCount
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        tags
-                        audio {
-                            publicURL
-                        }
-                        date(formatString: "DD MMMM, YYYY")
+            nodes {
+                id
+                html
+                frontmatter {
+                    title
+                    tags
+                    audio {
+                        publicURL
                     }
-                    fields {
-                        slug
-                    }
-                    headings(depth: h6) {
-                        value
-                        depth
-                    }
-                    excerpt(pruneLength: 9)
-                    internal {
-                        content
-                    }
+                    date(formatString: "DD MMMM, YYYY")    
+                }
+                fields {
+                    slug
+                }
+                headings(depth: h6) {
+                    value
+                    depth
+                }
+                excerpt(pruneLength: 9)
+                internal {
+                    content
                 }
             }
         }

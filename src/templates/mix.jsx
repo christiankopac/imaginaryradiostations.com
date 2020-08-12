@@ -10,13 +10,12 @@ const StyledContainer = styled(Container)`
   max-widht: 600px;
 `;
 
-export default ({ data }) => {
-  const post = data.markdownRemark;
+export default ({ props }) => {
   return (
     <StyledContainer>
-      <h1>{post.frontmatter.title}</h1>
-      <h6>{post.frontmatter.date}</h6>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <h1>{props.frontmatter.title}</h1>
+      <h6>{props.frontmatter.date}</h6>
+      <div dangerouslySetInnerHTML={{ __html: props.html }} />
       <ReactAudioPlayer
         src={post.frontmatter.audio}
         autoPlay
@@ -29,15 +28,3 @@ export default ({ data }) => {
   );
 };
 
-export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        tags
-        date(formatString: "", fromNow: true, difference: "today")
-      }
-    }
-  }
-`;
