@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import AnimatedText from "./AnimatedText/AnimatedText";
-import * as styles from "./Layout.css";
+import * as styles from "./Layout.module.css";
 
 const Header = styled.div`
   display: flex;
