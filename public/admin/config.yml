@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: christiankopac/imaginaryradiostations.com
+  name: git-gateway
   branch: master
 
 media_folder: static/img

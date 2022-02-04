@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 // import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
-import AnimatedText from './AnimatedText/AnimatedText'
-import styles from './Layout.module.css'
-// learn to separate parts of the header into different const
+import { Link } from "gatsby";
+import Helmet from "react-helmet";
+import styled from "styled-components";
+import AnimatedText from "./AnimatedText/AnimatedText";
+import * as styles from "./Layout.css";
 
 const Header = styled.div`
   display: flex;
@@ -18,14 +17,14 @@ const Header = styled.div`
     background: black;
     height: 25vh;
   }
-`
+`;
 const Nav = styled.div`
   display: flex;
   flex-direction: row;
   flex: 2;
   align-items: center;
   justify-content: flex-end;
-  & a{
+  & a {
     margin: 50px;
     text-decoration: none;
     position: relative;
@@ -44,7 +43,7 @@ const Nav = styled.div`
       display: block;
       bottom: 0;
       background: black;
-      transition: all .15s;
+      transition: all 0.15s;
       pointer-events: none;
       transform: translateY(-10px);
       height: 5px;
@@ -62,7 +61,7 @@ const Nav = styled.div`
       }
     }
   }
-`
+`;
 const NavLogo = styled.div`
   display: flex;
   flex: 5;
@@ -74,18 +73,15 @@ const NavLogo = styled.div`
     text-decoration: none;
   }
   @media (max-width: 700px) {
-     font-size: 1.4rem;
-     display: inline-flex;
-     margin-left: 1rem;
- }
-`
-
+    font-size: 1.4rem;
+    display: inline-flex;
+    margin-left: 1rem;
+  }
+`;
 
 class homeText extends React.Component {
-  render () {
-    return (
-      <div className={styles.logoHome} />
-    )
+  render() {
+    return <div className={styles.logoHome} />;
   }
 }
 
@@ -94,17 +90,24 @@ class homeText extends React.Component {
 const Container = styled.div`
   nax-width: 600px;
   margin: 0 auto;
-`
+`;
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="imaginary radio stations"
       meta={[
-        { name: 'description', content: 'mixes and music ⌛ [timeless] 💣 [bombs] 🔥 [caliente!]' },
-        { name: 'keywords', content: 'music, dj, berlin, evano, pak, 1983, experimental, adult, ambient, house, techno, detroit' },
+        {
+          name: "description",
+          content: "mixes and music ⌛ [timeless] 💣 [bombs] 🔥 [caliente!]",
+        },
+        {
+          name: "keywords",
+          content:
+            "music, dj, berlin, evano, pak, 1983, experimental, adult, ambient, house, techno, detroit",
+        },
       ]}
-      />
+    />
     <Header>
       <NavLogo className={styles.navlogo}>
         <Link to="/" href="/">
@@ -112,26 +115,32 @@ const TemplateWrapper = ({ children }) => (
           <homeText />
           <AnimatedText className="homeLinkText" ext="home" />
         </Link>
-
       </NavLogo>
-      <Nav style={{
-        display: 'flex',
-      }}
+      <Nav
+        style={{
+          display: "flex",
+        }}
       >
-        <Link href="/about" to="/about">about</Link>
-        <Link href="/mixes" to="/mixes">mixes</Link>
-        <Link href="/events" to="/events">events</Link>
-        <Link href="/contact" to="/contact">contact</Link>
+        <Link href="/about" to="/about">
+          about
+        </Link>
+        <Link href="/mixes" to="/mixes">
+          mixes
+        </Link>
+        <Link href="/events" to="/events">
+          events
+        </Link>
+        <Link href="/contact" to="/contact">
+          contact
+        </Link>
       </Nav>
     </Header>
-    <Container>
-      {children}
-    </Container>
+    <Container>{children}</Container>
   </div>
-)
+);
 
 // TemplateWrapper.defaultProps = {
 //   children: PropTypes.node,
 // }
 
-export default TemplateWrapper
+export default TemplateWrapper;
