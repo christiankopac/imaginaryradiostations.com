@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import AnimatedText from "./AnimatedText/AnimatedText";
-import * as styles from "./Layout.module.css";
+import "./Layout.css";
 
 const Header = styled.div`
   display: flex;
@@ -109,9 +109,9 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header>
-      <NavLogo className={styles.navlogo}>
+      <NavLogo className="navlogo">
         <Link to="/" href="/">
-          <span className={styles.logoHome} />
+          <span className="logoHome" />
           <homeText />
           <AnimatedText className="homeLinkText" ext="home" />
         </Link>
