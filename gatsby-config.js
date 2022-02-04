@@ -3,7 +3,6 @@ module.exports = {
     title: "imaginary radio stations",
   },
   plugins: [
-    "gatsby-plugin-netlify",
     {
       resolve: "gatsby-source-filesystem",
       options: {

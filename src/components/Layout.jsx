@@ -81,7 +81,7 @@ const NavLogo = styled.div`
 
 class homeText extends React.Component {
   render() {
-    return <div className={styles.logoHome} />;
+    return <div className="logoHomo" />;
   }
 }
 
