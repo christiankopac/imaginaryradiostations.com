@@ -1,20 +1,19 @@
-import React from 'react'
-import baffle from 'baffle'
-import './AnimatedText.css'
+import React from "react";
+import baffle from "baffle";
 
 class AnimatedText extends React.Component {
   componentDidMount() {
-    baffle('.text--animated')
+    baffle(".text--animated")
       .start()
       .set({
-        characters: '░░░░░',
+        characters: "░░░░░",
         speed: 200,
       })
-      .reveal(2500)
+      .reveal(2500);
   }
   render() {
-    return <div className="text--animated">{this.props.text}</div>
+    return <div className="text--animated">{this.props.text}</div>;
   }
 }
 
-export default AnimatedText
+export default AnimatedText;
