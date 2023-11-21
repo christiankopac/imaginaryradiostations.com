@@ -1,15 +1,30 @@
-# Imaginary Radio Stations
+# SolidStart
 
-✨ [soundcloud](https://soundcloud.com/imaginaryradiostations)
+Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
 
-contact: imaginaryradiostations@gmail.com
+## Creating a project
 
-## About
+```bash
+# create a new project in the current directory
+npm init solid@latest
 
-Imaginary Radio Stations is a project by three Slovenian music enthusiasts, DJs and artists, founded in Berlin. Its existence is as an expression of pure intent without fitting into flavor-of-the-week hype columns, purist approaches and associated microscenes. The aim is timelessness, always inspired by concrete ambients, settings and states of mind, beckoning the wandering ear to tune in. Its concept reflects the commodification and atomization of music culture. By blurring the lines between genres and styles, producers and consumers it mirrors a fragmented culture of innumerable acteurs where everyone curates their own imaginary radio.
+# create a new project in my-app
+npm init solid@latest my-app
+```
 
-## DJs
+## Developing
 
-💿 [EVANO](https://soundcloud.com/evano)
-💿 [CP-AK](https://soundcloud.com/cp-ak)
-💿 [1983](https://soundcloud.com/198319831983)
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
+
+By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
