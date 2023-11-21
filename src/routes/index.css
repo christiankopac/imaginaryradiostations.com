@@ -5,17 +5,19 @@
     justify-content: center;
     height: 100vh;
 }
+.logo {
+    margin-top: -80px;
+}
 .icons {
     display: flex;
     gap: calc(36px * 1.5);
 }
 
-.icon {
-    font-size: 36px;
+.icons a >  *  {
     color: #eee;
 }
 
-.icon:hover {
+.icons a > *:hover {
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
