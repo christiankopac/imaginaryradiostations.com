@@ -18,7 +18,8 @@
     "@solidjs/router": "^0.8.3",
     "solid-js": "^1.8.5",
     "solid-mdx": "^0.0.7",
-    "solid-start": "^0.3.10"
+    "solid-start": "^0.3.10",
+    "solid-start-netlify": "^0.3.10"
   },
   "engines": {
     "node": ">=18"
