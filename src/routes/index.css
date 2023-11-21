@@ -1,0 +1,28 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.icons {
+    display: flex;
+    gap: calc(36px * 1.5);
+}
+
+.icon {
+    font-size: 36px;
+    color: #eee;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-bandcamp:hover {
+    color: #629aa9;
+}
+.icon-soundcloud:hover {
+    color: #ff7700;
+}
