@@ -8,17 +8,17 @@
   "type": "module",
   "devDependencies": {
     "@mdx-js/rollup": "^2.3.0",
-    "solid-start-node": "^0.3.10",
-    "typescript": "^4.9.5",
-    "vite": "^4.5.2"
+    "solid-start-node": "^0.3.11",
+    "typescript": "^5.9.3",
+    "vite": "^4.5.14"
   },
   "dependencies": {
-    "@solidjs/meta": "^0.29.1",
-    "@solidjs/router": "^0.8.3",
-    "solid-js": "^1.8.5",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.8.4",
+    "solid-js": "^1.9.10",
     "solid-mdx": "^0.0.7",
-    "solid-start": "^0.3.10",
-    "solid-start-netlify": "^0.3.10"
+    "solid-start": "^0.3.11",
+    "solid-start-netlify": "^0.3.11"
   },
   "engines": {
     "node": ">=18"
