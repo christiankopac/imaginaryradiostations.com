@@ -1,29 +1,33 @@
 {
   "name": "imaginaryradiostations.com",
   "scripts": {
-    "dev": "solid-start dev",
-    "build": "solid-start build",
-    "start": "solid-start start"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "type": "module",
   "devDependencies": {
-    "@mdx-js/rollup": "^2.3.0",
-    "solid-start-node": "^0.3.11",
-    "typescript": "^5.9.3",
-    "vite": "^4.5.14"
+    "@mdx-js/rollup": "^3.1.1",
+    "@netlify/vite-plugin": "^3.0.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
   },
   "dependencies": {
     "@solidjs/meta": "^0.29.4",
-    "@solidjs/router": "^0.8.4",
-    "solid-js": "^1.9.10",
-    "solid-mdx": "^0.0.7",
-    "solid-start": "^0.3.11",
-    "solid-start-netlify": "^0.3.11"
+    "@solidjs/router": "^1.0.0",
+    "@solidjs/start": "^2.1.0",
+    "solid-js": "^1.9.17",
+    "solid-mdx": "^0.0.7"
+  },
+  "overrides": {
+    "@netlify/zip-it-and-ship-it": {
+      "typescript": "~5.9.3"
+    }
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   },
   "volta": {
-    "node": "18.18.2"
+    "node": "24.22.1"
   }
 }

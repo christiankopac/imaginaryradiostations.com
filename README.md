@@ -1,7 +1,7 @@
 # Imaginary Radio Staions
 
-- Node [v.18.18.2](https://nodejs.org/en/blog/release/v18.18.2)
-- Built with [Solid Start](https://start.solidjs.com)
+- Node [v24.22.1](https://nodejs.org/en/blog/release/v24.22.1)
+- Built with [SolidStart](https://docs.solidjs.com/solid-start) v2, deployed to Netlify via `@netlify/vite-plugin`
 
 ## Development
 

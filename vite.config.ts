@@ -1,20 +1,25 @@
-import solid from "solid-start/vite";
-import netlify from "solid-start-netlify";
+import mdx from "@mdx-js/rollup";
+import netlify from "@netlify/vite-plugin";
+import { solidStart } from "@solidjs/start/config";
 import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [
     {
-      ...(await import("@mdx-js/rollup")).default({
+      ...mdx({
         jsx: true,
         jsxImportSource: "solid-js",
         providerImportSource: "solid-mdx",
       }),
       enforce: "pre",
     },
-    solid({
-      extensions: [".mdx", ".md"],
-      adapter: netlify({ edge: true })
+    solidStart({
+      extensions: ["mdx", "md"],
+    }),
+    netlify({
+      build: { enabled: true },
+      // No edge functions in this site; skip the Deno-based dev emulator.
+      edgeFunctions: { enabled: false },
     }),
   ],
 });

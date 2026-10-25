@@ -4,11 +4,14 @@
     "esModuleInterop": true,
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "jsxImportSource": "solid-js",
     "jsx": "preserve",
     "strict": true,
-    "baseUrl": "./",
+    "noEmit": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "types": ["vite/client"],
     "paths": {
       "~/*": ["./src/*"]
     }
